@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  height: 7rem;
+  background-color: rgb(0, 0, 50);
+  padding: 0 3rem;
+}
+
+header .page-title {
+  font-size: 4rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+main {
+  height: calc(100vh - 10rem);
+  background-color: lightgrey;
+}
+
+main .container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 1400px;
+  margin: auto;
+  padding: 5rem 0;
+}
+
+main .container .row {
+  display: flex;
+  height: 4rem;
+  background-color: green;
+  color: white;
+  border-radius: 0.5rem;
+}
+
+main .container .row .column {
+  display: flex;
+  align-items: center;
+  width: 12.5%;
+  padding: 0 2rem;
+}
+
+main .container .row .column:not(:last-of-type) {
+  border-right: 1px solid black;
+}
+
+main .container .row.mainrow {
+  background-color: rgb(0, 0, 50);
+}
+
+main .container .row.mainrow .column h3 {
+  text-transform: uppercase;
+  color: white;
+}
+
+main .container .row.mainrow .column:not(:last-of-type) {
+  border-right: 1px solid lightgrey;
+}
+
+main .container .row.late {
+  background-color: yellow;
+  color: black;
+  font-weight: 600;
+}
+
+main .container .row.deleted {
+  background-color: red;
+  color: white;
+  font-weight: 600;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  background-color: rgb(0, 0, 50);
+}
+
+footer p {
+  color: white;
+}
+
