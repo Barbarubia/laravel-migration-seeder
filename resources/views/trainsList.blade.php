@@ -32,7 +32,7 @@
             </div>
         </div>
         @foreach ($trainsList as $train)
-            <div class="row {{ $train->deleted ? 'deleted' : '' }}{{ !$train->on_time ? 'late' : ''}}">
+            <div class="row {{ $train->deleted ? 'deleted' : '' }} {{ !$train->on_time ? 'late' : ''}}">
                 <div class="column">
                     <span>{{ $train->train_company }}</span>
                 </div>
@@ -65,6 +65,12 @@
                 </div>
             </div>
         @endforeach
+
+        <div class="pagination">
+            {{ $trainsList->links() }}
+        </div>
+
     </div>
+
 
 @endsection
