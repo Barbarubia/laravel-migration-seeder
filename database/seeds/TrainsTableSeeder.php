@@ -16,7 +16,7 @@ class TrainsTableSeeder extends Seeder
         $faker = \Faker\Factory::create('it_IT');
         for ($_i = 1; $_i <= 200; $_i++) {
             $trainData = [
-                'train_company'         => $faker->company(),
+                'train_company'         => $faker->word(),
                 'train_code'            => $faker->regexify('[A-Z]{2}[0-9]{4}'),
                 'departure_railway'     => $faker->city(),
                 'destination_railway'   => $faker->city(),
