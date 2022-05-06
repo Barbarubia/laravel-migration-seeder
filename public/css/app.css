@@ -23,7 +23,6 @@ header .page-title {
 }
 
 main {
-  height: calc(100vh - 10rem);
   background-color: lightgrey;
 }
 
